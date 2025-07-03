@@ -19,6 +19,13 @@
   padding-left: 40px;
   text-align: left;
 }
+.hero-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-top: -10px; /* adjust if your navbar is fixed */
+}
 
 .poster-head {
   font-size: 39px;

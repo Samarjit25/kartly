@@ -64,7 +64,7 @@ function Footer() {
           </div>
         </div>
         <div className="developer">
-          {/* <img src={Logo} className="Amazon-img" /> */}
+  
           <div className="dev-data">
             <p>Copyright &copy; 2025 Kartly | All rights reserved | Developed by</p>
             <a

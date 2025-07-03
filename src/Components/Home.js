@@ -1,45 +1,22 @@
-import {React,useState} from "react";
+import React from "react";
 import "./home.css";
-import Delivery from "../imgs/delivery.png";
 import Popular from "./Category/Popular";
-import Navbar from './Navbar'
+import Navbar from "./Navbar";
 
 function Home() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  document.title = "Kartly"
-
-  const handleScroll = () => {
-    window.scrollTo({
-      top: scrollPosition + 750, 
-      behavior: "smooth" 
-    });
-    setScrollPosition(scrollPosition + 750);
-    setTimeout(() => {
-    setScrollPosition(0); 
-      
-    }, 100); 
-  };
+  document.title = "Kartly";
 
   return (
     <>
-    <Navbar/>
-        <div className="content">
-          <div className="poster-area">
-            <div className="poster-data">
-              <p className="poster-head"> <b>Delivered Before You Blink!</b></p>
-              <p className="poster-desc">
-              Skip the wait—your goodies are racing to your doorstep with free next-day delivery. 
-              <b style={{ fontSize: "22px" }}><br/>Just today. Just for you.</b>
-              
-                
-              </p>
-            </div>
-            <button onClick={handleScroll} className="browse-btn">Browse products</button>
-          </div>
-          <img src={Delivery} className="delivery" />
-          <Popular />
-        </div>
+      <Navbar />
+      <div className="content">
+        <img
+          src="https://res.cloudinary.com/dz2mlxltd/image/upload/c_crop,w_3500,h_863/v1751559887/Group_204_1_lcbp2b.png"
+          alt="Hero Banner"
+          className="hero-banner"
+        />
+        <Popular />
+      </div>
     </>
   );
 }
